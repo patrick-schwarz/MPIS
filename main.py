@@ -316,7 +316,7 @@ while True:
         cv2.imshow(windowName, img)
 
     key = cv2.waitKey(1) & 0xFF
-    if key == 27:
+    if key == 27 or key == '\n':
         break
 
     counter += 1

@@ -1,0 +1,7 @@
+**/.idea/*
+**/build/*
+Module/MouseTracking/build
+Module/MouseTracking/*.pyd
+Module/MouseTracking/*egg-info/*
+data/calib.npz
+data/recordedPositions.npz
