@@ -190,7 +190,8 @@ LRESULT CALLBACK MainWndProc(HWND hwnd, UINT nMsg, WPARAM wParam, LPARAM lParam)
             int ItemIndex = 0;
             if (rawMousePosition != NULL &&
                 rawMousePosition->header.dwType == RIM_TYPEMOUSE &&
-                rawMousePosition->header.hDevice == mouseInputs[ItemIndex]    ) {
+                rawMousePosition->header.hDevice == mouseInputs[ItemIndex] &&
+                mouseInputs.size() > 2) {
                 return 1;
             }
         }
